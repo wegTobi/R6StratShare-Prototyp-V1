@@ -1,0 +1,234 @@
+{
+  "cell": {
+    "width": 600,
+    "height": 450
+  },
+  "columns": 4,
+  "rows": 7,
+  "maps": [
+    {
+      "slug": "bank",
+      "name": "Bank",
+      "row": 0,
+      "column": 0,
+      "layoutId": "bank-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "bartlett",
+      "name": "Bartlett University",
+      "row": 0,
+      "column": 1,
+      "layoutId": "bartlett-preview",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "border",
+      "name": "Border",
+      "row": 0,
+      "column": 2,
+      "layoutId": "border-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "casino",
+      "name": "Calypso Casino",
+      "row": 0,
+      "column": 3,
+      "layoutId": "calypso-casino-floor-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "chalet",
+      "name": "Chalet",
+      "row": 1,
+      "column": 0,
+      "layoutId": "chalet-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "club",
+      "name": "Clubhouse",
+      "row": 1,
+      "column": 1,
+      "layoutId": "clubhouse-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "coastline",
+      "name": "Coastline",
+      "row": 1,
+      "column": 2,
+      "layoutId": "coastline-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "consulate",
+      "name": "Consulate",
+      "row": 1,
+      "column": 3,
+      "layoutId": "consulate-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "district",
+      "name": "District",
+      "row": 2,
+      "column": 0,
+      "layoutId": "district-preview",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "emerald",
+      "name": "Emerald Plains",
+      "row": 2,
+      "column": 1,
+      "layoutId": "emeraldplains-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "favela",
+      "name": "Favela",
+      "row": 2,
+      "column": 2,
+      "layoutId": "favela-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "fortress",
+      "name": "Fortress",
+      "row": 2,
+      "column": 3,
+      "layoutId": "fortress-floor-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "hereford",
+      "name": "Hereford",
+      "row": 3,
+      "column": 0,
+      "layoutId": "hereford-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "house",
+      "name": "House",
+      "row": 3,
+      "column": 1,
+      "layoutId": "house-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "kafe",
+      "name": "Kafe Dostoyevsky",
+      "row": 3,
+      "column": 2,
+      "layoutId": "kafe-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "kanal",
+      "name": "Kanal",
+      "row": 3,
+      "column": 3,
+      "layoutId": "kanal-3",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "lair",
+      "name": "Lair",
+      "row": 4,
+      "column": 0,
+      "layoutId": "lair-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "labs",
+      "name": "Nighthaven Labs",
+      "row": 4,
+      "column": 1,
+      "layoutId": "nighthavenlabs-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "oregon",
+      "name": "Oregon",
+      "row": 4,
+      "column": 2,
+      "layoutId": "oregon-2",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "outback",
+      "name": "Outback",
+      "row": 4,
+      "column": 3,
+      "layoutId": "outback-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "plane",
+      "name": "Plane",
+      "row": 5,
+      "column": 0,
+      "layoutId": "plane-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "skyscraper",
+      "name": "Skyscraper",
+      "row": 5,
+      "column": 1,
+      "layoutId": "skyscraper-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "stadiumalpha",
+      "name": "Stadium Alpha",
+      "row": 5,
+      "column": 2,
+      "layoutId": "stadiuma-floor-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "stadiumbravo",
+      "name": "Stadium Bravo",
+      "row": 5,
+      "column": 3,
+      "layoutId": "stadiumb-02",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "themepark",
+      "name": "Theme Park",
+      "row": 6,
+      "column": 0,
+      "layoutId": "themepark-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "tower",
+      "name": "Tower",
+      "row": 6,
+      "column": 1,
+      "layoutId": "tower-floor-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "villa",
+      "name": "Villa",
+      "row": 6,
+      "column": 2,
+      "layoutId": "villa-floor-1",
+      "layoutLabel": "1st Floor"
+    },
+    {
+      "slug": "yacht",
+      "name": "Yacht",
+      "row": 6,
+      "column": 3,
+      "layoutId": "yacht-1",
+      "layoutLabel": "1st Floor"
+    }
+  ]
+}

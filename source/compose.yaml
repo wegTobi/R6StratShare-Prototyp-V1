@@ -1,0 +1,49 @@
+services:
+  r6-app:
+    build: .
+    restart: unless-stopped
+    init: true
+    environment:
+      R6_SITE_URL: ${R6_SITE_URL:?Set R6_SITE_URL to your public HTTPS origin}
+    expose:
+      - "3000"
+    networks:
+      - app
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/account').then(async r=>{if(!r.ok||(await r.json()).signedIn!==false)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "run", "--token-file", "/run/secrets/tunnel_token"]
+    depends_on:
+      r6-app:
+        condition: service_healthy
+    secrets:
+      - tunnel_token
+    networks:
+      - app
+      - tunnel
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  app:
+    internal: true
+  tunnel:
+
+secrets:
+  tunnel_token:
+    file: ${R6_TUNNEL_TOKEN_FILE:-./secrets/tunnel-token}

@@ -1,0 +1,36 @@
+.tool { max-width: 1600px; margin: 0 auto; padding: 24px; color: var(--text); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.header h1 { margin: 6px 0 14px; font-size: 1.5rem; }
+.header a { padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 6px; font-size: .85rem; }
+.kicker { color: var(--teal); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.instructions { max-width: 1000px; margin: 0 0 12px; color: var(--muted); font-size: .85rem; line-height: 1.6; }
+.controls { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; margin: 20px 0 14px; }
+.tool label { display: grid; gap: 6px; font-size: .75rem; color: var(--muted); }
+.tool select, .tool input:not([type=range]):not([type=file]) { min-height: 34px; max-width: 100%; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--panel); color: var(--text); padding: 6px 9px; }
+.tool input[type=range] { accent-color: var(--teal); }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 16px; }
+.workspace > section { min-width: 0; }
+.mapFrame { overflow: auto; height: min(65vh, 780px); min-height: 300px; border: 1px solid var(--line-strong); border-radius: 8px; background: #081015; scrollbar-color: var(--line-strong) var(--panel); }
+.artwork { position: relative; min-width: 100%; cursor: crosshair; user-select: none; }
+.floor { position: relative; z-index: 1; display: block; width: 100%; height: auto; }
+.base { position: absolute; inset: 0; width: 100%; height: 100%; }
+.drawing { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; pointer-events: none; }
+.drawing line { stroke: var(--teal); stroke-width: 3; }
+.endpoint { position: absolute; z-index: 3; display: grid; place-items: center; translate: -50% -50%; width: 22px; height: 22px; border: 2px solid var(--teal); border-radius: 50%; background: #081015; color: #eef8f5; font-size: .7rem; pointer-events: none; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.actions > span { flex: 1 1 100%; color: var(--muted); font-size: .8rem; }
+.tool button { padding: 7px 10px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--panel-3); color: var(--text); font-size: .78rem; }
+.tool button:hover:not(:disabled) { border-color: var(--teal); }
+.tool button:disabled { cursor: default; opacity: .4; }
+.tool .primary { border-color: var(--teal); color: var(--teal); }
+.status { min-height: 20px; color: var(--muted); font-size: .8rem; }
+.results { display: flex; flex-direction: column; gap: 12px; min-width: 0; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.results h2 { margin: 0; font-size: .95rem; }
+.results p, .results small { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.5; }
+.results ul { list-style: none; padding: 0; margin: 0; overflow: auto; max-height: 32vh; scrollbar-color: var(--line-strong) var(--panel); }
+.results li + li { margin-top: 4px; }
+.results li button { display: flex; width: 100%; justify-content: space-between; gap: 8px; text-align: left; }
+.results li button[aria-current=true] { border-color: var(--teal); }
+.results li button span:last-child { color: var(--muted); font-size: .7rem; }
+.upload input { width: 100%; font-size: .7rem; }
+@media (max-width: 900px) { .workspace { grid-template-columns: 1fr; } .tool { padding: 14px; } .header { align-items: start; } .mapFrame { height: 55vh; } }
