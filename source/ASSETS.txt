@@ -1,1 +1,0 @@
-All original public/ assets are included in ../dist/client/. To develop this source snapshot, copy the non-generated assets from there into source/public/. The portable app already has everything it needs.
